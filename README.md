@@ -24,12 +24,13 @@ sh init.sh
 
 ### Step 3: show 
 Open your browser, and visit http://localhost:8989/css/??a.css,b.css
-Try to update `a.ßcss`, `b.css` files.
+
+Try to update `a.css`, `b.css` files.
 
 
 --- 
 
-### 中文说明
+## 中文说明
 
 nginx-http-concat 演示案例，不影响已安装的 nginx，本 demo 仅会影响项目根目录下的文件。
 
