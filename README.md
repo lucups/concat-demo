@@ -1,4 +1,4 @@
-# Contact Demo
+# Concat Demo
 
 This is a simple demo for nginx-http-concat, and it does not affect your installed nginx.
 This project is only for macOS.
@@ -6,13 +6,16 @@ This project is only for macOS.
 ### Step 1: download
 
 ```
-git clone https://github.com/Lucups/contact-demo.git 
+git clone https://github.com/Lucups/concat-demo.git 
+cd concat-demo
 ```
 
 OR
 
 ```
-wget https://codeload.github.com/Lucups/contact-demo/zip/master -O contact-demo.zip
+wget https://codeload.github.com/Lucups/concat-demo/zip/master -O concat-demo.zip
+unzip concat-demo.zip
+cd concat-demo
 ```
 
 ### Step 2: config

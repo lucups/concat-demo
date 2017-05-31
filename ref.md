@@ -22,11 +22,11 @@ NGX_PREFIX=${NGX_PREFIX:-/Users/tony/tmp/nginx-1.10.2}
 # 编译，注意编译后不要 install，编译完后，当前 nginx 源码目录下生成 objs 目录则说明编译成功
 make 
 
-# 修改 nginx 配置文件，将默认端口改为 8989，并增加 contact 相关的配置
+# 修改 nginx 配置文件，将默认端口改为 8989，并增加 concat 相关的配置
 
 location /static/css/ {
     concat on;
-    concat_delimiter /* contact demo */; 
+    concat_delimiter /* concat demo */; 
 }
 
 # concat，是否打开资源合并开关，选项：on | off，默认：off
