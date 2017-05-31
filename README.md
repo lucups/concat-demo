@@ -1,5 +1,36 @@
 # Contact Demo
 
+This is a simple demo for nginx-http-concat, and it does not affect your installed nginx.
+This project is only for macOS.
+
+### Step 1: download
+
+```
+git clone https://github.com/Lucups/contact-demo.git 
+```
+
+OR
+
+```
+wget https://codeload.github.com/Lucups/contact-demo/zip/master -O contact-demo.zip
+```
+
+### Step 2: config
+
+```
+# run at the project root dir
+sh init.sh
+```
+
+### Step 3: show 
+Open your browser, and visit http://localhost:8989/css/??a.css,b.css
+Try to update `a.ßcss`, `b.css` files.
+
+
+--- 
+
+### 中文说明
+
 nginx-http-concat 演示案例，不影响已安装的 nginx，本 demo 仅会影响项目根目录下的文件。
 
 PS: 本项目仅限 macOS 运行。
