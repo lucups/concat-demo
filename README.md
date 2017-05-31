@@ -4,13 +4,14 @@ nginx-http-concat 演示案例，不影响已安装的 nginx，本 demo 仅会�
 
 PS: 本项目仅限 macOS 运行。
 
-### Step 1: 下载本项目
+### Step 1: 下载
 
-git clone 或下载解压都可以
+git clone 或下载解压本项目都可以
 
-### Step 2: 配置，在项目根目录下执行
+### Step 2: 配置
 
 ```
+# 在项目根目录下执行
 sh init.sh
 ```
 
