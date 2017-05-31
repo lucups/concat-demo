@@ -9,6 +9,7 @@ rm -rf nginx-http-concat-master
 export SCRIPT_PATH=$(cd `dirname $0`; pwd)
 export NGINX_PATH=$SCRIPT_PATH/nginx-1.10.2
 
+
 # download
 if [ ! -f nginx-1.10.2.tar.gz ]; then
 	wget http://nginx.org/download/nginx-1.10.2.tar.gz
@@ -28,6 +29,8 @@ make
 
 cd ..
 cp $SCRIPT_PATH/conf/nginx.conf $NGINX_PATH/conf/nginx.conf
+export WEBPATH=`echo $SCRIPT_PATH| sed 's#\/#\\\/#g'`
+sed -i ".bak" "s/LocalWebPath/$WEBPATH\/webroot/g" ${NGINX_PATH}/conf/nginx.conf
 $NGINX_PATH/objs/nginx -c $NGINX_PATH/conf/nginx.conf
 
 open http://localhost:8989/css/??a.css,b.css
