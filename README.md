@@ -2,12 +2,17 @@
 
 nginx-http-concat 演示案例，不影响已安装的 nginx，本 demo 仅会影响项目根目录下的文件。
 
+PS: 本项目仅限 macOS 运行。
+
 ### Step 1: 下载本项目
 
 git clone 或下载解压都可以
 
-### Step 2: 配置执行
+### Step 2: 配置，在项目根目录下执行
+
+```
 sh init.sh
+```
 
 ### Step 3: 查看演示
 打开 http://localhost:8989/css/??a.css,b.css
